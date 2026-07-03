@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    int *p1, *p2;
+    int aux;
+
+    cout << "Ingrese dos numeros: ";
+    cin >> a >> b;
+
+    p1 = &a;
+    p2 = &b;
+
+    aux = *p1;
+    *p1 = *p2;
+    *p2 = aux;
+
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+
+    return 0;
+}
