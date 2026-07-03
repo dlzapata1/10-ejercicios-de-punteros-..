@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[5];
+    int *inicio = v;
+    int *fin = v + 4;
+
+    for(int i = 0; i < 5; i++) {
+        cin >> v[i];
+    }
+
+    while(inicio < fin) {
+        int aux = *inicio;
+        *inicio = *fin;
+        *fin = aux;
+
+        inicio++;
+        fin--;
+    }
+
+    cout << "Arreglo invertido:" << endl;
+
+    for(int i = 0; i < 5; i++) {
+        cout << v[i] << " ";
+    }
+
+    return 0;
+}
