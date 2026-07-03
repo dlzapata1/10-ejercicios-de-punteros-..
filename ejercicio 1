@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numero = 25;
+    int *p;
+
+    p = &numero;
+
+    cout << "Valor de numero: " << numero << endl;
+    cout << "Direccion: " << p << endl;
+    cout << "Valor usando el puntero: " << *p << endl;
+
+    return 0;
+}
