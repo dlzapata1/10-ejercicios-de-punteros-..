@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char texto[100];
+    int contador = 0;
+
+    cout << "Ingrese una palabra: ";
+    cin.getline(texto, 100);
+
+    char *p = texto;
+
+    while(*p != '\0') {
+
+        if(*p=='a'||*p=='e'||*p=='i'||*p=='o'||*p=='u'||
+           *p=='A'||*p=='E'||*p=='I'||*p=='O'||*p=='U')
+            contador++;
+
+        p++;
+    }
+
+    cout << "Numero de vocales: " << contador << endl;
+
+    return 0;
+}
