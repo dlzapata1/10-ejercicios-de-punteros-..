@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int edad = 18;
+    int *p = &edad;
+
+    cout << "Edad original: " << edad << endl;
+
+    *p = 21;
+
+    cout << "Edad modificada: " << edad << endl;
+
+    return 0;
+}
